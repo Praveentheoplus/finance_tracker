@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1775556029342,
+    "description": "apple",
+    "amount": 788,
+    "type": "income"
+  },
+  {
+    "id": 1775556044853,
+    "description": "salary",
+    "amount": 458,
+    "type": "expense"
+  },
+  {
+    "id": 1775556347997,
+    "description": "shopping",
+    "amount": 88,
+    "type": "expense"
+  },
+  {
+    "id": 1775556954888,
+    "description": "shopping",
+    "amount": 546,
+    "type": "expense",
+    "userId": 1775556907889
+  },
+  {
+    "id": 1775557821641,
+    "description": "salary",
+    "amount": 7000,
+    "type": "income",
+    "userId": 1775556907889
+  },
+  {
+    "id": 1775557842979,
+    "description": "grocery",
+    "amount": 453,
+    "type": "expense",
+    "userId": 1775556907889
+  }
+]

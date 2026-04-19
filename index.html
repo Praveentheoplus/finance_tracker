@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Tracker - Manage Your Money</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1> Finance Tracker</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#transactions">Transactions</a></li>
+                <li><a href="#reports">Reports</a></li>
+                 <li><a href="#logout" button id="logout-btn" class="logout-btn">Logout</a></li>
+                <!-- <li><button id="logout-btn" class="logout-btn">Logout</button></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="dashboard" class="hero">
+            <div class="hero-content">
+                <h2>Take Control of Your Finances</h2>
+                <p>Track your income and expenses effortlessly. Stay on top of your financial goals.</p>
+            </div>
+        </section>
+
+        <section class="summary">
+            <div class="container">
+                <div class="balance-card">
+                    <h3>Total Balance</h3>
+                    <p class="balance-amount">$<span id="total-balance">0.00</span></p>
+                </div>
+                <div class="stats">
+                    <div class="stat-card">
+                        <h4>Total Income</h4>
+                        <p>$<span id="total-income">0.00</span></p>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Total Expenses</h4>
+                        <p>$<span id="total-expenses">0.00</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="transactions" class="add-transaction">
+            <div class="container">
+                <h3>Add New Transaction</h3>
+                <form id="transaction-form" class="transaction-form">
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <input type="text" id="description" placeholder="e.g., Salary, Grocery shopping" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="amount">Amount</label>
+                        <input type="number" id="amount" placeholder="0.00" step="0.01" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="type">Type</label>
+                        <select id="type">
+                            <option value="income">Income</option>
+                            <option value="expense">Expense</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-primary">Add Transaction</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="transaction-history">
+            <div class="container">
+                <div class="history-header">
+                    <h3>Transaction History</h3>
+                    <button id="report-btn" class="btn-report">📊 Generate Report</button>
+                </div>
+                <div id="transaction-list" class="transaction-list"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Finance Tracker</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
